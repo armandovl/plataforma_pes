@@ -19,8 +19,8 @@
 </head>
   <body>
     <!--agregaamos una barra de navegación-->
-  <nav class="green accent-3">
-    <div class="nav-wrapper container">
+  <nav class="green accent-3"> <!-- color -->
+    <div class="nav-wrapper container"> <!--container = centrado -->
       <a href="#!" class="brand-logo">Logo</a>
       <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
       <ul class="right hide-on-med-and-down">
@@ -39,7 +39,7 @@
     <li><a href="#">Mobile</a></li>
   </ul>
     
-  
+  	<!-- para poner tarjeta-->
     <div class="container section">
       <div class="row">
           <form class="col s12">
@@ -57,7 +57,7 @@
                       <select id="select2" name="select2">
                         <option value="" disabled selected>nombre</option>
                           <?!=list4;?>
-              </select>
+              		  </select>
                       <label>selecciona nombre</label>
                       </div>
                       
@@ -67,10 +67,7 @@
                           <?!=list3;?>
                       </select>
                       <label>Materialize Select</label>
-                      </div>                    
-                      
-                      
-                      
+                      </div>       
               </div> <!--tarjeta fin-->
           </form>
         <button class="btn  sombreadoGrueso" id="boton">Enviar</button> <!-- importante el boton va fuera del form --> 
@@ -80,6 +77,6 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
     <?!= include("page-js");?>
-    <?!= include("iniciar-materialize");?>
+    <?!= include("iniciar-materialize-css");?>
   </body>
 </html>
