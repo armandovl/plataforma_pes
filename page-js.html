@@ -1,0 +1,20 @@
+ <script type="text/javascript">
+
+    document.getElementById("boton").addEventListener("click",enviarSheet);
+    
+    function enviarSheet(){
+    alert("que meirda");
+
+     var compilado={}; //variable que compila la informacion de varias variables
+    
+      compilado.nombreUno= document.getElementById("select1").value; //ya nada mas se descomponer
+      compilado.nombreDos= document.getElementById("select2").value;
+
+      alert(compilado.nombreUno);
+
+      google.script.run.hacerClick(compilado);  // *esta linea ejecuta funciones del .gs el nombre1 pasa como argumento
+      
+    
+      }
+      
+   </script>
